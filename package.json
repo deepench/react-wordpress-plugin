@@ -1,0 +1,65 @@
+{
+	"name": "deependra-portfolio",
+	"title": "Deependra Portfolio",
+	"version": "1.0.0",
+	"homepage": "https://chaudharydeependra/plugins/deependra-portfolio/",
+	"repository": {
+		"type": "git",
+		"url": "git+https://gitlab.com/deepench/wordpress-react-plugin"
+	},
+	"license": "GPL-3.0+",
+	"main": "Gruntfile.js",
+	"devDependencies": {
+		"@babel/core": "^7.16.0",
+		"@babel/preset-env": "^7.16.4",
+		"@babel/preset-react": "^7.16.0",
+		"autoprefixer": "~9.5.0",
+		"babel-eslint": "^10.1.0",
+		"babel-loader": "^8.2.3",
+		"eslint": "^7.32.0",
+		"eslint-config-react": "^1.1.7",
+		"eslint-loader": "^4.0.2",
+		"eslint-plugin-react": "^7.27.1",
+		"grunt": "~1.4.1",
+		"grunt-contrib-compress": "~1.4.3",
+		"grunt-contrib-concat": "~1.0.1",
+		"grunt-contrib-cssmin": "~3.0.0",
+		"grunt-contrib-jshint": "~1.1.0",
+		"grunt-contrib-uglify": "~4.0.0",
+		"grunt-contrib-watch": "~1.0.0",
+		"grunt-phpcbf": "^0.1.1",
+		"grunt-postcss": "~0.9.0",
+		"grunt-rtlcss": "~2.0.1",
+		"grunt-sass": "~3.0.0",
+		"grunt-stylelint": "~0.8.0",
+		"html-webpack-plugin": "^5.5.0",
+		"node-sass": "~6.0.0",
+		"prettier": "2.5.0",
+		"sass": "^1.43.5",
+		"sass-loader": "^12.3.0",
+		"webpack": "^5.65.0",
+		"webpack-cli": "^4.9.1",
+		"webpack-dev-server": "^4.6.0"
+	},
+	"engines": {
+		"node": ">=0.8.0",
+		"npm": ">=1.1.0"
+	},
+	"bugs": {
+		"url": "ttps://github.com/deepench/wordpress-react-plugin/issues"
+	},
+	"scripts": {
+		"start": "webpack --watch --mode development --config ./webpack/webpack.config.dev.js",
+		"build": "webpack --mode production --config ./webpack/webpack.config.prod.js",
+		"prod": "grunt && webpack --mode=production",
+		"format": "prettier --write \"src/**/*.js\"",
+		"eslint-fix": "eslint --fix \"src/**/*.js\""
+	},
+	"author": "WPEverest",
+	"dependencies": {
+		"css-loader": "^6.5.1",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"style-loader": "^3.3.1"
+	}
+}
